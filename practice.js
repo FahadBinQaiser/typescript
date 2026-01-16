@@ -34,11 +34,11 @@ function calculateAverage(numbers) {
     return sum / numbers.length;
 }
 console.log(calculateAverage([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
-function notTeen(users) {
+var notTeen = function (users) {
     return users.filter(function (user) { return user.age > 18; });
-}
+};
 var users = [
-    { name: "Fahad", age: 17, id: 1 },
+    { name: "Claudio", age: 17, id: 1 },
     { name: "Nina", age: 20, id: 2 },
     { name: "Steve", age: 19, id: 3 },
 ];
