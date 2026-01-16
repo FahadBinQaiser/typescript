@@ -25,3 +25,12 @@ var logMessage = function (message) {
     console.log(message);
 };
 logMessage("This function shows nothing");
+function calculateAverage(numbers) {
+    var sum = 0;
+    numbers.forEach(function (num) { return (sum += num); });
+    //   for (let num of numbers) {
+    //     sum += num;
+    //   }
+    return sum / numbers.length;
+}
+console.log(calculateAverage([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
