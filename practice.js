@@ -1,14 +1,27 @@
-var message = "Hello, TypeScript!";
-console.log(message);
-var username = "Nina";
-var age = 23;
-var country = "Ireland";
-console.log("Name is ".concat(username, " and age is ").concat(age, ", I live in ").concat(country));
-var numbers = [1, 2, 3, 4, 5];
-console.log("First score", numbers[0]);
-var user = {
-    name: "Nina",
-    email: "nina@gmail.com",
-    age: 23,
+function add(a, b) {
+    return a + b;
+}
+console.log(add(2, 4));
+function person(name, age) {
+    if (age) {
+        return "Hey my name is ".concat(name, " and age is ").concat(age);
+    }
+    else {
+        return "Hey my name is ".concat(name);
+    }
+}
+console.log(person("Fahad", 17));
+function multiply(x, y) {
+    if (y === void 0) { y = 2; }
+    return x * y;
+}
+console.log(multiply(5));
+console.log(multiply(5, 10));
+var divide = function (x, y) {
+    return x / y;
 };
-console.log(user);
+console.log(divide(10, 2));
+var logMessage = function (message) {
+    console.log(message);
+};
+logMessage("This function shows nothing");
