@@ -46,4 +46,4 @@ console.log(findUserById(userList, 2));
 function isValidEmail(email) {
     return email.includes("@");
 }
-isValidEmail("fahadbinqaiser3@gmail.com");
+console.log(isValidEmail("fahadbinqaiser3gmail.com"));
