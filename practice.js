@@ -12,11 +12,20 @@ var userFilledList = [
     { name: "JohnWick", age: 36, email: "john@gmail.com", id: 4 },
     { name: "Harry Pottah", age: 32, email: "pottah@gmail.com", id: 5 },
 ];
+// 1) Get Adults function
 function getAdults(userList) {
     return userList.filter(function (user) { return user.age > 18; });
 }
 console.log(getAdults(userFilledList));
+// 2) Find by Email function
 function findByEmail(user, email) {
     return user.find(function (u) { return u.email === email; });
 }
 console.log(findByEmail(userFilledList, "nina@gmail.com"));
+// 3) Return average of all numbers
+function averageNumber(number) {
+    var sum = 0;
+    number.forEach(function (num) { return (sum += num); });
+    return sum / number.length;
+}
+console.log(averageNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
