@@ -22,10 +22,16 @@ function findByEmail(user, email) {
     return user.find(function (u) { return u.email === email; });
 }
 console.log(findByEmail(userFilledList, "nina@gmail.com"));
-// 3) Return average of all numbers
-function averageNumber(number) {
+// 3) Return average of all users
+function averageAge(userList) {
     var sum = 0;
-    number.forEach(function (num) { return (sum += num); });
-    return sum / number.length;
+    userList.forEach(function (num) { return (sum += num.age); });
+    return sum / userList.length;
 }
-console.log(averageNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+console.log(averageAge(userFilledList));
+// function averageNumber(number: number[]): number {
+//   let sum = 0;
+//   number.forEach((num) => (sum += num));
+//   return sum / number.length;
+// }
+// console.log(averageNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
