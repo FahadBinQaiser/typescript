@@ -43,3 +43,7 @@ var userList = [
     { name: "Steve", age: 19, id: 3 },
 ];
 console.log(findUserById(userList, 2));
+function isValidEmail(email) {
+    return email.includes("@");
+}
+isValidEmail("fahadbinqaiser3@gmail.com");
