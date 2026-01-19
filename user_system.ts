@@ -30,7 +30,6 @@ function getAdults(userList: User[]): User[] {
 function findByEmail(user: User[], email: string): User | undefined {
   return user.find((u) => u.email === email);
 }
-console.log(findByEmail(userFilledList, "nina@gmail.com"));
 
 // 5) Return average of all users
 
@@ -39,7 +38,11 @@ function averageAge(userList: User[]): number {
   userList.forEach((num) => (sum += num.age));
   return sum / userList.length;
 }
+
+// 6) Execution of all functions
+
 console.log(getAdults(userFilledList));
+console.log(findByEmail(userFilledList, "nina@gmail.com"));
 console.log(averageAge(userFilledList));
 
 // function averageNumber(number: number[]): number {
