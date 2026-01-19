@@ -11,7 +11,7 @@ interface User {
 
 // 2) Array of 5 users created
 
-const userFilledList = [
+const userFilledList: User[] = [
   { name: "Claudio", age: 17, email: "nigga@gmail.com", id: 1 },
   { name: "Nina", age: 20, email: "nina@gmail.com", id: 2 },
   { name: "Steve", age: 19, email: "steve@gmail.com", id: 3 },
