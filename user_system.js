@@ -18,7 +18,7 @@ function findByEmail(user, email) {
 // 5) Return average of all users
 function averageAge(userList) {
     var sum = 0;
-    userList.forEach(function (num) { return (sum += num.age); });
+    userList.forEach(function (user) { return (sum += user.age); });
     return sum / userList.length;
 }
 // 6) Execution of all functions
