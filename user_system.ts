@@ -35,7 +35,7 @@ function findByEmail(user: User[], email: string): User | undefined {
 
 function averageAge(userList: User[]): number {
   let sum = 0;
-  userList.forEach((num) => (sum += num.age));
+  userList.forEach((user) => (sum += user.age));
   return sum / userList.length;
 }
 
