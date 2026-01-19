@@ -47,3 +47,11 @@ function isValidEmail(email) {
     return email.includes("@");
 }
 console.log(isValidEmail("fahadbinqaiser3gmail.com"));
+function conversion(celsius) {
+    return (celsius * 9 / 5) + 32;
+}
+console.log(conversion(32));
+console.log(conversion(0)); // 32
+console.log(conversion(100)); // 212
+console.log(conversion(37)); // 98.6
+console.log(conversion(-40)); // -40
