@@ -1,3 +1,5 @@
+import console = require("console");
+
 interface Vehicle {
   brand: string;
   model: string;
@@ -103,3 +105,13 @@ const person1: person = {
   countryCode: +92,
 };
 console.log(person1);
+
+function process(value: string | number) {
+  if (typeof value === "string") {
+    return value.toUpperCase();
+  } else {
+    return value.toFixed(2);
+  }
+}
+console.log(process(4));
+console.log(process("hello"));

@@ -1,3 +1,4 @@
+"use strict";
 var __assign = (this && this.__assign) || function () {
     __assign = Object.assign || function(t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -9,6 +10,8 @@ var __assign = (this && this.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
+var console = require("console");
 var myCar = {
     brand: "BMW",
     model: "M4",
@@ -40,3 +43,13 @@ var person1 = {
     countryCode: +92,
 };
 console.log(person1);
+function process(value) {
+    if (typeof value === "string") {
+        return value.toUpperCase();
+    }
+    else {
+        return value.toFixed(2);
+    }
+}
+console.log(process(4));
+console.log(process("hello"));
