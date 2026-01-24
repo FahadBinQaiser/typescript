@@ -83,3 +83,23 @@ function updateOrderStatus(order: Order, newStatus: OrderStatus): Order {
 }
 
 console.log(updateOrderStatus(order, "shipped"));
+
+// Studying & and | operators
+
+type Address = {
+  city: string;
+  country: string;
+};
+type Contact = {
+  num: number;
+  countryCode: number;
+};
+type person = Address & Contact;
+
+const person1: person = {
+  city: "Lahore",
+  country: "Pakistan",
+  num: +929,
+  countryCode: +92,
+};
+console.log(person1);

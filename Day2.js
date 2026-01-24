@@ -33,3 +33,10 @@ function updateOrderStatus(order, newStatus) {
     return __assign(__assign({}, order), { status: newStatus });
 }
 console.log(updateOrderStatus(order, "shipped"));
+var person1 = {
+    city: "Lahore",
+    country: "Pakistan",
+    num: +929,
+    countryCode: +92,
+};
+console.log(person1);
