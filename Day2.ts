@@ -33,6 +33,35 @@ console.log(myBike);
 
 //  Understanding types
 
+// type ID = string | number;
+// type OrderStatus = "pending" | "approval" | "shipped" | "Cancelled";
+
+// interface Order {
+//   id: ID;
+//   status: OrderStatus;
+//   amount: number;
+// }
+
+// const order: Order = {
+//   id: "ORD-123",
+//   status: "pending",
+//   amount: 99.99,
+// };
+
+// function updateOrderStatus(order: Order, newStatus: OrderStatus): Order {
+//   return {
+//     ...order,
+//     status: newStatus,
+//   };
+// }
+// const shipped = updateOrderStatus(order, "shipped");
+// console.log(shipped);
+// const person = { name: "John", age: 25 };
+// const updated = { ...person, age: 30 };
+
+// console.log(person.age);
+// console.log(updated.age);
+
 type ID = string | number;
 type OrderStatus = "pending" | "approval" | "shipped" | "Cancelled";
 
@@ -41,23 +70,16 @@ interface Order {
   status: OrderStatus;
   amount: number;
 }
-
 const order: Order = {
-  id: "ORD-123",
+  id: "ABC-123",
   status: "pending",
   amount: 99.99,
 };
-
 function updateOrderStatus(order: Order, newStatus: OrderStatus): Order {
   return {
     ...order,
     status: newStatus,
   };
 }
-const shipped = updateOrderStatus(order, "shipped");
-console.log(shipped);
-const person = { name: "John", age: 25 };
-const updated = { ...person, age: 30 };
 
-console.log(person.age);
-console.log(updated.age);
+console.log(updateOrderStatus(order, "shipped"));

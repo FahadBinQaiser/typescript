@@ -25,16 +25,11 @@ var myBike = {
 console.log(myCar);
 console.log(myBike);
 var order = {
-    id: "ORD-123",
+    id: "ABC-123",
     status: "pending",
     amount: 99.99,
 };
 function updateOrderStatus(order, newStatus) {
     return __assign(__assign({}, order), { status: newStatus });
 }
-var shipped = updateOrderStatus(order, "shipped");
-console.log(shipped);
-var person = { name: "John", age: 25 };
-var updated = __assign(__assign({}, person), { age: 30 });
-console.log(person.age);
-console.log(updated.age);
+console.log(updateOrderStatus(order, "shipped"));
