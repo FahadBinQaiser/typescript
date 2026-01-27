@@ -53,3 +53,22 @@ function process(value) {
 }
 console.log(process(4));
 console.log(process("hello"));
+function formulaCalculator(shape) {
+    if (shape.kind === "circle") {
+        return Math.PI * shape.radius * shape.radius;
+    }
+    else {
+        return shape.width * shape.height;
+    }
+}
+var circle = {
+    kind: "circle",
+    radius: 5,
+};
+var rectangle = {
+    kind: "rectangle",
+    width: 5,
+    height: 10,
+};
+console.log(formulaCalculator(circle));
+console.log(formulaCalculator(rectangle));

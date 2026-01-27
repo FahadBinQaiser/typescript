@@ -115,3 +115,36 @@ function process(value: string | number) {
 }
 console.log(process(4));
 console.log(process("hello"));
+
+type Circle = {
+  kind: "circle";
+  radius: number;
+};
+type Rectangle = {
+  kind: "rectangle";
+  width: number;
+  height: number;
+};
+
+type Shape = Circle | Rectangle;
+
+function formulaCalculator(shape: Shape): number {
+  if (shape.kind === "circle") {
+    return Math.PI * shape.radius * shape.radius;
+  } else {
+    return shape.width * shape.height;
+  }
+}
+
+const circle: Circle = {
+  kind: "circle",
+  radius: 5,
+};
+const rectangle: Rectangle = {
+  kind: "rectangle",
+  width: 5,
+  height: 10,
+};
+
+console.log(formulaCalculator(circle));
+console.log(formulaCalculator(rectangle));
