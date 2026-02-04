@@ -94,3 +94,16 @@ function getArea(shape: Shape): number {
 }
 
 console.log(getArea({ kind: "square", size: 5 }));
+
+function process(input: string | number | any[]): number {
+  if (typeof input === "string") {
+    return input.length;
+  } else if (typeof input === "number") {
+    return input * 2;
+  } else {
+    return (input as any[]).length;
+  }
+}
+console.log(process("hello"));
+console.log(process(10));
+console.log(process([1, 2, 3]));
